@@ -5,27 +5,27 @@ import { Lock } from "lucide-react";
 const profiles = [
   {
     name: "Yukii",
-    img: "/StreamNest images/Profile image-2.jpg",
+    img: "/streamnest-images/profile-1.jpg",
     locked: true,
   },
   {
     name: "Home",
-    img: "/StreamNest images/Home.jpeg",
+    img: "/streamnest-images/home.jpg",
     locked: false,
   },
   {
     name: "Vicky",
-    img: "/StreamNest images/Vicky.jpeg",
+    img: "/streamnest-images/vicky.jpg",
     locked: false,
   },
   {
     name: "TV",
-    img: "/StreamNest images/TV.jpeg",
+    img: "/streamnest-images/tv.jpg",
     locked: false,
   },
   {
     name: "Children",
-    img: "/StreamNest images/Children.jpeg",
+    img: "/streamnest-images/children.jpg",
     locked: false,
   },
 ];
