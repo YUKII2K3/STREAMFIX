@@ -133,4 +133,13 @@ agenthub/agents/youtube/db
 .cache/
 
 # Mobile development
-android-sdk/ 
+android-sdk/
+
+# Ignore build output
+/build
+
+# Do NOT ignore public or static assets
+!public/
+!public/streamnest-images/
+!public/favicon.ico
+!public/index.html 
