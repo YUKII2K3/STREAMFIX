@@ -120,7 +120,8 @@ function App() {
   // Fetch movies from TMDB API
   const fetchMovies = async (endpoint, retryCount = 0) => {
     try {
-      const response = await fetch(`${TMDB_BASE_URL}${endpoint}?api_key=${TMDB_API_KEY}&language=en-US&page=1`);
+      const joiner = endpoint.includes('?') ? '&' : '?';
+      const response = await fetch(`${TMDB_BASE_URL}${endpoint}${joiner}api_key=${TMDB_API_KEY}&language=en-US&page=1`);
       if (response.status === 429 && retryCount < 2) {
         return await fetchMoviesWithFallback(endpoint);
       }
@@ -135,7 +136,8 @@ function App() {
   const fetchMoviesWithFallback = async (endpoint) => {
     const fallbackKey = '3cb41ecea3bf606c56552db3d17adefd';
     try {
-      const response = await fetch(`${TMDB_BASE_URL}${endpoint}?api_key=${fallbackKey}&language=en-US&page=1`);
+      const joiner = endpoint.includes('?') ? '&' : '?';
+      const response = await fetch(`${TMDB_BASE_URL}${endpoint}${joiner}api_key=${fallbackKey}&language=en-US&page=1`);
       const data = await response.json();
       return data.results || [];
     } catch (error) {
