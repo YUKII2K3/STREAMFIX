@@ -3,7 +3,13 @@
     { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } }
   ],
   "routes": [
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/favicon.ico", "dest": "/favicon.ico" },
+    { "src": "/manifest.json", "dest": "/manifest.json" },
+    { "src": "/logo192.png", "dest": "/logo192.png" },
+    { "src": "/logo512.png", "dest": "/logo512.png" },
+    { "src": "/asset-manifest.json", "dest": "/asset-manifest.json" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
     { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "outputDirectory": "build"
+  ]
 } 
