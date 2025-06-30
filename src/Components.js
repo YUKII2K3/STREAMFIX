@@ -184,7 +184,7 @@ const Navbar = ({ onSearchClick, onNotificationClick, onMenuClick, currentSectio
                 aria-label="Profile"
               >
                 <img
-                  src="/StreamNest images/Profile image-1.jpg"
+                  src="/streamnest-images/profile-1.jpg"
                   alt="Profile"
                   className="w-8 h-8 object-cover rounded-full"
                 />

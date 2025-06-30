@@ -14,7 +14,7 @@ export default function ProfileModal({ open, onClose }) {
         </button>
         <div className="flex flex-col items-center">
           <img
-            src="/StreamNest images/Profile image-1.jpg"
+            src="/streamnest-images/profile-1.jpg"
             alt="Yuktheshwar M P"
             className="w-28 h-28 rounded-full object-cover border-4 border-red-500 mb-4"
           />
